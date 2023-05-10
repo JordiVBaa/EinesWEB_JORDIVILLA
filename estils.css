@@ -242,7 +242,7 @@
 }
 
 .serveis a {
-  color: #007bff;
+  color: #ff6600;
   text-decoration: none;
 }
 
@@ -321,4 +321,7 @@
   .footer-logo {
     width: 150px;
   }
+}
+.map {
+  margin-bottom: 20px;
 }

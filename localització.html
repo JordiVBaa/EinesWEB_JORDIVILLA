@@ -7,47 +7,55 @@
     <style>
         #map {
             height: 400px;
-            max-width: 600px; /* Ajusta l'amplada màxima del mapa segons les teves preferències */
-            margin: 0 auto; /* Centra el mapa horitzontalment */
-            border: 1px solid #000; /* Afegir un requadre al voltant del mapa */
+            max-width: 600px; 
+            margin: 0 auto; 
+            border: 1px solid #000; 
         }
 
     </style>
 </head>
 
 <body>
+
  <header class="header-noticies">
   <div class="logo">
-    <a href="index.html">
+    <a href="principal.html">
       <img src="logo-ajuntament.png" alt="Logo" class="logo-imatge" />
     </a>
   </div>
   <h1 class="titol">Localització</h1>
   <nav class="menu">
     <ul>
-      <li><a href="index.html">Inici</a></li>
+      <li><a href="principal.html">Inici</a></li>
       <li><a href="serveis.html">Serveis</a></li>
       <li><a href="noticies.html">Notícies</a></li>
       <li><a href="contacte.html">Contacte</a></li>
-     
+      <li><a href="localització.html">Localització</a></li>
     </ul>
   </nav>
 </header>
-<body>
+<div class="loc">
+    <h1>Descobreix els llocs més emblemàtics de la ciutat. </h1>
+    <p>
+
+A continuació, trobaràs una descripció dels llocs destacats que et recomanem visitar a Reus. Cada marcador del mapa està associat amb una breu explicació perquè puguis conèixer millor la seva importància i atractius. T'animem a explorar-los i gaudir de tot el que aquests indrets ofereixen.
+
+Endinsa't en el cor de Reus i deixa't sorprendre per la seva bellesa i encant. Siguis un turista o un resident local, et convidem a descobrir aquests racons especials que converteixen Reus en una destinació única i inoblidable.</p>
+</section>
     <div id="map"></div>
 
     <script src="leaflet.js"></script>
     <script>
-        // Inicialitzar el mapa
+        
         var map = L.map('map').setView([41.15834, 1.10606], 16);
 
-        // Afegir capa de mapa base
+        
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; OpenStreetMap contributors',
             maxZoom: 18,
         }).addTo(map);
 
-        // Afegir marcadors amb xinxetes
+        
         var markers = [
             {
                 name: "Plaça del Prim",
@@ -73,7 +81,7 @@
                 lon: 1.1066,
                 iconUrl: "imatges/icona.png"
             },
-            // Afegir aquí els altres marcadors
+            
         ];
 
         for (var i = 0; i < markers.length; i++) {
@@ -115,11 +123,8 @@
       &copy; 2023 Ajuntament de Reus. Tots els drets reservats.
     </p>
   </div>
+
 </footer>
-
-
-
-
 
 
 </body>

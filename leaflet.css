@@ -395,12 +395,9 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	}
 
 
-.leaflet-default-icon-path { /* used only in path-guessing heuristic, see L.Icon.Default */
+.leaflet-default-icon-path { 
 	background-image: url(images/icona.png);
 	}
-
-
-/* attribution and scale controls */
 
 .leaflet-container .leaflet-control-attribution {
 	background: #fff;
@@ -464,7 +461,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	}
 
 
-/* popup */
+
 
 .leaflet-popup {
 	position: absolute;
@@ -556,7 +553,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	}
 
 
-/* div icon */
+
 
 .leaflet-div-icon {
 	background: #fff;
@@ -564,8 +561,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	}
 
 
-/* Tooltip */
-/* Base styles for the element that has a tooltip */
+
 .leaflet-tooltip {
 	position: absolute;
 	padding: 6px;
@@ -596,7 +592,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	content: "";
 	}
 
-/* Directions */
+
 
 .leaflet-tooltip-bottom {
 	margin-top: 6px;
@@ -642,10 +638,10 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	border-right-color: #fff;
 	}
 
-/* Printing */
+
 	
 @media print {
-	/* Prevent printers from removing background-images of controls. */
+
 	.leaflet-control {
 		-webkit-print-color-adjust: exact;
 		print-color-adjust: exact;
@@ -734,19 +730,19 @@ svg.leaflet-image-layer.leaflet-interactive path {
 .menu a:hover {
   color: #CCCCCC;
 }
-/* Estil per als enllaços de "Més informació" */
+
 .mes-informacio {
-  color: #FF6600; /* Color taronja */
-  text-decoration: none; /* Sense subratllat */
+  color: #FF6600; 
+  text-decoration: none; 
 }
 
 .mes-informacio:hover {
-  text-decoration: underline; /* Subratllat en passar el ratolí per sobre */
+  text-decoration: underline; 
 }
 .noticia{
-  width: 700px; /* Amplada de la imatge */
-  height: autopx; /* Alçada de la imatge */
-  object-fit: cover; /* Ajustar l'imatge dins dels límits */
+  width: 700px; 
+  height: autopx; 
+  object-fit: cover; 
 }
 .footer {
   display: flex;
@@ -824,7 +820,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 .footer-copyright {
   font-size: 14px;
 }
-/* Estils per pantalla gran */
+
 @media screen and (min-width: 768px) {
   .footer {
     flex-direction: row;
@@ -986,4 +982,11 @@ header {
   .footer-logo {
     width: 150px;
   }
+}
+#map {
+  margin-bottom: 20px;
+}
+
+footer.footer {
+  margin-top: 20px;
 }
