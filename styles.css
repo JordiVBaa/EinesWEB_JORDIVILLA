@@ -382,3 +382,33 @@ nav ul li a {
 .xarxes-socials .instagram {
   border-color: #C13584;
 }
+
+@media screen and (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+  }
+
+  .footer-section {
+    margin-right: 20px;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .footer-logo {
+    width: 150px;
+  }
+}
